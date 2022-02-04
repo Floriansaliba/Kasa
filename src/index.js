@@ -1,19 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Header from "./components/Header/Header";
 import reportWebVitals from "./reportWebVitals";
-import HousingList from "./components/HousingList/HousingList";
-import Banner from "./components/Banner/Banner";
-import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home";
+import Logement from "./pages/Logement";
+import Error from "./pages/404";
+import Propos from "./pages/Propos";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Header />
-    <Banner />
-    <HousingList />
-    <Footer />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/logement/:housingId" element={<Logement />} />
+      <Route path="/propos" element={<Propos />} />
+      <Route path="/*" element={<Error />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
