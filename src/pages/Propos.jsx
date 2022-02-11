@@ -2,13 +2,17 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer"
 import Dropdown from "../components/Dropdown/Dropdown";
 import montagnes from "../pictures/montagnes.jpg"
+import "./Propos.css"
 
 const Propos = ()=>{
     return(
         <div>
             <Header />
-            <img src={montagnes} alt="Montagnes" />
-            <div>
+            <div className="countainer-image-propos">
+            <img className="image-propos" src={montagnes} alt="Montagnes" />
+            <div className="mix-blend-mode"></div>
+            </div>
+            <div className="container-dropdowns">
                 <Dropdown title="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
                 <Dropdown title ="Respect" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
                 <Dropdown title ="Service" text="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />

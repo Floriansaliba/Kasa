@@ -8,7 +8,7 @@ const Rating=(props)=>{
     const range = [1,2,3,4,5]
 
 return(
-    <div >
+    <div className="ratings">
   {range.map((rangeEleme)=>
       scaleValue <= rangeEleme ? <img key={rangeEleme.toString()} className="fullStar" src={starEmpty} alt="star" /> : <img key={rangeEleme.toString()} className="emptyStar" src={starFull} alt="star" />
   )}

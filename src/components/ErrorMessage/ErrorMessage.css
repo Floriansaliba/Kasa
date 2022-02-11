@@ -26,3 +26,26 @@
     text-decoration: underline;
     margin: 150px 0px;
 }
+
+@media screen and (max-width: 375px){
+    .error_title{
+        margin-top: 150px;
+        font-size: 96px;
+    }
+
+    .error_text{
+        font-size: 18px;
+        max-width: 260px;
+        text-align: center;
+        margin-top: 11px;
+    }
+
+    .error_link{
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: underline;
+        margin: 130px 0px;
+    }
+
+
+}

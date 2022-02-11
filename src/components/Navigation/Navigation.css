@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 309px;
+    width: 326px;
     height: 34px;
     margin: 0px;
     padding: 0px;
@@ -17,4 +17,17 @@
     color: #FF6060;
     text-decoration: underline;
     padding-left: 57px;
+}
+
+@media screen and (max-width: 375px){
+    .navigation_item{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .navigation{
+        width: 126px;
+        height: 34px;
+        text-transform: uppercase;
+    }
 }

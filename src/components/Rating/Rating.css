@@ -1,0 +1,29 @@
+.fullStar{
+width: 30px;
+padding-left: 10px;
+}
+
+.emptyStar{
+width: 30px;
+padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 375px){
+    .fullStar{
+        width: 15px;
+        padding-left: 0px;
+        padding-right: 5px;
+        }
+        
+    .emptyStar{
+        width: 15px;
+        padding-left: 0px;
+        padding-right: 5px;
+    }
+
+    .ratings{
+         min-width: 105px;
+    }
+}

@@ -35,3 +35,27 @@ list-style-type: none;
     color: white;
     font-weight: 500;
 }
+
+@media screen and (max-width: 375px){
+    .housing_list{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .housing{
+        position: relative;
+        width: 335px;
+        height: 255px;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .housing_title{
+        font-size: 18px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        margin: 15px;
+        color: white;
+        font-weight: 500;
+    }
+}

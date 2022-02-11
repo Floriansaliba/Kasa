@@ -5,3 +5,9 @@
     align-items: center;
     margin: 40px 100px 63px 100px;
 }
+
+@media screen and (max-width: 375px){
+    .header{
+        margin: 20px;
+    }
+}
