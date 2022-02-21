@@ -26,8 +26,7 @@ return (
             <img className="dropdown_chevron-up" src={chevronUp} alt="Fermer" onClick={handleClick}/>
         </div>
         <div className="dropdown_paragraph">
-            <p className="dropdown_text">{text}</p>
-            <ul className="equipment-list">{list}</ul>
+           {text ? <p className="dropdown_text">{text}</p> : <ul className="equipment-list">{list}</ul>} 
         </div>
     </div>
 )

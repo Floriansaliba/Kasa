@@ -13,6 +13,7 @@ const Slider = ()=>{
         if(housing.id === housingId){
             return housing
         }
+        return false
     })
     const selectedHousingObject = selectedHousing[0]
 
@@ -30,12 +31,20 @@ const Slider = ()=>{
 
     const displayProperty = handleDisplay()
 
+    const goLeft = ()=>{
+        setCount(count >= 1 ? count -1 : pictures.length -1)
+    }
+
+    const goRight = ()=>{
+        setCount(count < pictures.length -1 ? count +1 : 0)
+    }
+
     return(
         <div className="picture-container">
-        <img className="arow-left" src={arrowLeft} style={{display : displayProperty}} alt="Défiler à gauche" onClick={() => setCount(count >= 1 ? count -1 : pictures.length -1)} />
+        <img className="arow-left" src={arrowLeft} style={{display : displayProperty}} alt="Défiler à gauche" onClick={goLeft} />
         <img className="housing_pic" src={pictures[count]} alt={selectedHousingObject.title} />
         <span className="count">{count +1 + "/" + pictures.length}</span>
-        <img className="arow-right" src={arrowRight}  style={{display : displayProperty}} alt="Défiler à droite" onClick={() => setCount(count < pictures.length -1 ? count +1 : 0)} />
+        <img className="arow-right" src={arrowRight}  style={{display : displayProperty}} alt="Défiler à droite" onClick={goRight} />
     </div>
     )
 }

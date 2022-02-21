@@ -17,6 +17,7 @@ const Logement = ()=>{
         if(housing.id === housingId){
             return housing
         }
+        return false
     })
     const selectedHousingObject = selectedHousing[0]
 

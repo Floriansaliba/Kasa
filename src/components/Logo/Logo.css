@@ -8,3 +8,10 @@
         width: auto;
     }
 }
+
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    .logo{
+        height: 47px ;
+        width: auto;
+    }
+}

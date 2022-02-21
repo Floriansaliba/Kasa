@@ -27,3 +27,10 @@ width: 122px;
         line-height: 17.11px;
     }
 }
+
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    .footer_text{
+        font-size: 12px;
+        line-height: 17.11px;
+    }
+}

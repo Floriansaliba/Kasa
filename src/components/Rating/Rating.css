@@ -27,3 +27,22 @@ padding-left: 10px;
          min-width: 105px;
     }
 }
+
+
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    .fullStar{
+        width: 15px;
+        padding-left: 0px;
+        padding-right: 5px;
+        }
+        
+    .emptyStar{
+        width: 15px;
+        padding-left: 0px;
+        padding-right: 5px;
+    }
+
+    .ratings{
+         min-width: 105px;
+    }
+}

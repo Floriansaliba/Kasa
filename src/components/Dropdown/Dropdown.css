@@ -82,3 +82,36 @@
         padding-left: 11.51px;
     }
 }
+
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    .dropdown{
+        margin-bottom: 20px;
+    }
+
+    .dropdown_header{
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .dropdown_title{
+        font-size: 13px;
+        padding-left: 11.51px;
+    }
+
+    .dropdown_chevron-down{
+        right: 6.79px;
+        top: 10.76px;
+        width: 13px;
+    }
+
+    .dropdown_chevron-up{
+        right: 6.79px;
+        top: 10.76px;
+        width: 13px;
+    }
+
+    .dropdown_text{
+        font-size: 12px;
+        padding-left: 11.51px;
+    }
+}

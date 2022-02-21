@@ -44,6 +44,34 @@ list-style-type: none;
 
     .housing{
         position: relative;
+        width: 317px;
+        height: 255px;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .housing_title{
+        font-size: 18px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        margin: 15px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    .housing_list{
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .housing{
+        position: relative;
         width: 335px;
         height: 255px;
         margin: 0px 20px 20px 20px;

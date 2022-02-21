@@ -26,7 +26,20 @@
     }
 
     .navigation{
-        width: 126px;
+        width: 140px;
+        height: 34px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    .navigation_item{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .navigation{
+        width: 140px;
         height: 34px;
         text-transform: uppercase;
     }

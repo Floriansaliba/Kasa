@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     margin: 43px 100px;
+    height: 223px;
 }
 
 .banner_title{
@@ -38,6 +39,28 @@ border-radius: 25px;
     .banner{
         margin: 20px 20px;
         height: 111px;
+    }
+
+    .banner_title{
+        position: absolute;
+        left: 16px;
+        font-size: 24px;
+        width: 217px;
+    }
+
+    .banner_picture{
+        border-radius: 10px;
+    }
+
+    .background{
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    .banner{
+        margin: 20px 20px;
+        height: 160px;
     }
 
     .banner_title{
