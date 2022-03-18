@@ -18,7 +18,6 @@ const Slider = ()=>{
     const selectedHousingObject = selectedHousing[0]
 
     const pictures = selectedHousingObject.pictures
-    console.log(pictures)
 
     const handleDisplay = ()=>{
         if(pictures.length === 1){

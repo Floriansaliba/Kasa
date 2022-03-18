@@ -5,6 +5,7 @@ import Dropdown from "../components/Dropdown/Dropdown";
 import Rating from "../components/Rating/Rating";
 import Slider from "../components/Slider/Slider"
 import Footer from "../components/Footer/Footer"
+import Error from "../pages/404"
 import "./Logement.css"
 
 
@@ -17,10 +18,12 @@ const Logement = ()=>{
         if(housing.id === housingId){
             return housing
         }
+
         return false
     })
-    const selectedHousingObject = selectedHousing[0]
 
+    if(selectedHousing.length === 1){
+    const selectedHousingObject = selectedHousing[0]
 
     const equipments = ()=>{
         let equipmentKey = 0
@@ -47,10 +50,6 @@ const Logement = ()=>{
 
     const listTag = tags()
 
-const pictures = selectedHousingObject.pictures
-console.log(pictures)
-
-
 
     return(
         <div>
@@ -76,13 +75,20 @@ console.log(pictures)
                         <Dropdown  title="Description" text={selectedHousingObject.description}/>   
                     </div>
                     <div className="dropdown-equipments">
-                     <Dropdown  title="Equipements" list={list} />
+                    <Dropdown  title="Equipements" list={list} />
                     </div>
                 </div>
             </div>
             <Footer />
         </div>
-    )
+    )}
+    else{
+        return(
+            <div>
+                <Error />
+            </div>
+        )
+    }
 }
 
 export default Logement

@@ -7,8 +7,8 @@ const HousingList = () => {
     <ul className="housing_list">
       {housings.map((housing) => {
         return (
-          <Link to={"/logement/" + housing.id}>
-          <li key={housing.id} id={housing.id} className="housing_frame">
+          <Link key={housing.id} to={"/logement/" + housing.id}>
+          <li id={housing.id} className="housing_frame">
             <div className="housing">
               <img
                 className="housing_picture"
