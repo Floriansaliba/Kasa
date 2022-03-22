@@ -10,6 +10,7 @@ const HousingList = () => {
           <Link key={housing.id} to={"/logement/" + housing.id}>
           <li id={housing.id} className="housing_frame">
             <div className="housing">
+              <div className="calque"></div>
               <img
                 className="housing_picture"
                 src={housing.cover}

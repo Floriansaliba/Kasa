@@ -52,7 +52,7 @@ const Logement = ()=>{
 
 
     return(
-        <div>
+        <div className="housing-frame">
             <Header />
             <div className="housing-section">
                 <Slider />

@@ -6,7 +6,7 @@ import "./Propos.css"
 
 const Propos = ()=>{
     return(
-        <div>
+        <div className="frame-propos">
             <Header />
             <div className="countainer-image-propos">
             <img className="image-propos" src={montagnes} alt="Montagnes" />
